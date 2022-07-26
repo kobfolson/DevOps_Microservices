@@ -11,8 +11,8 @@ dockerpath=kobby/udacity-ml-model
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
 docker login && \
-    docker tag $dockerpath
+    docker tag $dockerpath $dockerpath:latest
 
 # Step 3:
 # Push image to a docker repository
-docker push $dockerpath
+docker push $dockerpath:latest
