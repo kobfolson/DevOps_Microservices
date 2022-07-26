@@ -31,7 +31,8 @@ jobs:
       - run:
           name: run lint
           command: |
-            . .devops/bin/activate
+            ls -la
+            # . .devops/bin/activate
             make lint
 
 workflows:
