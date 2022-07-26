@@ -30,3 +30,8 @@ jobs:
           command: |
             . .devops/bin/activate
             make lint
+
+workflows:
+  default:
+    jobs:
+      - build
