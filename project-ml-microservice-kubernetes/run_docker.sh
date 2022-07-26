@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run local-app -p 8000:80 kobby/udacity-ml-model
+docker run --name local-app -p 8000:80 kobby/udacity-ml-model
