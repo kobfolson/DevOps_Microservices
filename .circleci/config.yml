@@ -16,7 +16,7 @@ jobs:
           name: install dependencies
           command: |
             # Setup virtualenv
-            make setup
+            make setup &&\
 
             # Install project dependencies
             make install
