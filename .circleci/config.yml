@@ -16,10 +16,7 @@ jobs:
           name: install dependencies
           command: |
             # Setup virtualenv
-            make setup &&\
-
-            # Install project dependencies
-            make install
+            make all
       - save_cache:
           paths:
             - ./.devops
